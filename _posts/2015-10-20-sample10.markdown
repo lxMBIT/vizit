@@ -6,8 +6,8 @@ description: > #
   Образец описания поста тут описание поста
   Фотограф Вася пупкин
 city: chisinau
-imgpath: images/fulls/
-headimg: images/fulls/10.jpg
+imgpath: /images/fulls/
+headimg: /images/fulls/10.jpg
 photos:
     - image_name: 01.jpg
     - image_name: 02.jpg
