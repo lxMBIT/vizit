@@ -21,7 +21,6 @@ photos:
     - image_name: 10.jpg
     - image_name: 11.jpg
     - image_name: 12.jpg
-permalink: test2
 ---
 <section id="thumbnails">
   {% for item in page.photos %}
