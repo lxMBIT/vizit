@@ -1,0 +1,34 @@
+---
+layout: default
+title:  "Cahul"
+date:   2015-10-19 08:50:21
+description: > #
+  Образец описания поста тут описание поста
+  Фотограф Петя Пупкин
+city: cahul
+imgpath: /images/fulls/
+headimg: /images/fulls/05.jpg
+photos:
+    - image_name: 01.jpg
+    - image_name: 02.jpg
+    - image_name: 04.jpg
+    - image_name: 05.jpg
+    - image_name: 03.jpg
+    - image_name: 06.jpg
+    - image_name: 07.jpg
+    - image_name: 08.jpg
+    - image_name: 09.jpg
+    - image_name: 10.jpg
+    - image_name: 11.jpg
+    - image_name: 12.jpg
+permalink: test
+---
+<section id="thumbnails">
+  {% for item in page.photos %}
+    <article>
+        <a class="thumbnail" href="{{ page.imgpath }}{{ item.image_name }}" data-position="left center"><img src="{{ page.imgpath }}{{ item.image_name }}" alt="" /></a>
+        <h2>{{ page.title }}</h2>
+        <p><a href="{{ page.imgpath }}{{ item.image_name }}" download><i class="fa fa-download"></i>Скачать фото</a> - {{ item.image_name }}</p>
+    </article>
+{% endfor %}
+</section>

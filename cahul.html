@@ -1,0 +1,33 @@
+---
+layout: default
+photos:
+    - image_path: /images/fulls/01.jpg
+    - image_path: /images/fulls/02.jpg
+    - image_path: /images/fulls/04.jpg
+    - image_path: /images/fulls/05.jpg
+    - image_path: /images/fulls/03.jpg
+    - image_path: /images/fulls/06.jpg
+    - image_path: /images/fulls/07.jpg
+    - image_path: /images/fulls/08.jpg
+    - image_path: /images/fulls/09.jpg
+    - image_path: /images/fulls/10.jpg
+    - image_path: /images/fulls/11.jpg
+    - image_path: /images/fulls/12.jpg
+---
+
+<!-- Thumbnail -->
+
+<section id="thumbnails">
+{% assign city = (site.posts | where: "city" , "cahul") %}
+{% for post in city %}
+    <article>
+      <!-- <div class="lookall">
+          <a href="{{ post.url }}"><i class="fa fa-search fa-5x"></i></a>
+      </div> -->
+        <a class="thumbnail" href="{{ post.headimg }}" data-position="left center"><img src="{{ post.headimg }}" alt="" /></a>
+        <h2><a href="{{ post.url }}">Смотреть отчет - {{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+    </article>
+
+{% endfor %}
+</section>
