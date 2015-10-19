@@ -13,7 +13,7 @@ layout: default
           <a href="{{ post.url }}"><i class="fa fa-search fa-5x"></i></a>
       </div> -->
         <a class="thumbnail" href="{{ post.headimg }}" data-position="left center"><img src="{{ post.headimg }}" alt="" /></a>
-        <h2><a href="{{ post.url }}">Смотреть отчет - {{ post.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">Смотреть отчет - {{ post.title }}</a></h2>
         <p>{{ post.description }}</p>
     </article>
 
