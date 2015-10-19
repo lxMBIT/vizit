@@ -25,9 +25,9 @@ photos:
 <section id="thumbnails">
   {% for item in page.photos %}
     <article>
-        <a class="thumbnail" href="{{ page.imgpath }}{{ item.image_name }}" data-position="left center"><img src="{{ page.imgpath }}{{ item.image_name }}" alt="" /></a>
+        <a class="thumbnail" href="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" data-position="left center"><img src="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" alt="" /></a>
         <h2>{{ page.title }}</h2>
-        <p><a href="{{ page.imgpath }}{{ item.image_name }}" download><i class="fa fa-download"></i>Скачать фото</a> - {{ item.image_name }}</p>
+        <p><a href="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" download><i class="fa fa-download"></i>Скачать фото</a> - {{ item.image_name }}</p>
     </article>
 {% endfor %}
 </section>
