@@ -8,7 +8,7 @@ description: > #
 
 # Banner
 banner: "/images/fulls/banner.jpg"
-bannerlink: "http://localhost:3000"
+bannerlink: "http://mbit.ws"
 
 
 # Build settings
