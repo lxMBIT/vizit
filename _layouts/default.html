@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
 <body class="is-loading-0 is-loading-1 is-loading-2">
-<!-- Main -->
-<div id="main">
-<!-- Header -->
-{% include header.html %}
-<!-- Content -->
-{{ content }}
+  <!-- Main -->
+  <div id="main">
 
-<!-- Footer -->
+    <!-- morphsearch -->
 
-{% include footer.html %}
 
-</div>
+    <!-- Header -->
 
-<!-- Scripts -->
+    {% include header.html %}
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+
+    <!-- Thumb Grid -->
+    <section id="thumbnails">
+
+      <!-- Content -->
+
+      {{ content }}
+
+    </section>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
 </body>
 

@@ -27,7 +27,12 @@
 		@else {
 			right: 0;
 		}
-
+		.back {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			z-index: 1;
+		}
 		.toggle {
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 			position: absolute;

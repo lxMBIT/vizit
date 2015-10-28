@@ -2,19 +2,4 @@
 layout: default
 ---
 
-<!-- Thumbnail -->
-
-<section id="thumbnails">
-{% assign city = (site.posts | where: "city" , "cahul") %}
-{% for post in city %}
-    <article>
-      <!-- <div class="lookall">
-          <a href="{{ post.url }}"><i class="fa fa-search fa-5x"></i></a>
-      </div> -->
-        <a class="thumbnail" href="{{ post.headimg | prepend: site.baseurl }}" data-position="center"><img src="{{ post.headimg | prepend: site.baseurl }}" alt="" /></a>
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">Смотреть отчет - {{ post.title }}</a></h2>
-        <p>{{ post.description }}</p>
-    </article>
-
-{% endfor %}
-</section>
+{% include cahul.html %}
