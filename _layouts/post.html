@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<section id="thumbnails">
 {% for item in page.photos %}
     <article>
         <a class="thumbnail" href="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" data-position="center"><img src="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" alt="" /></a>
@@ -8,3 +9,4 @@ layout: default
         <p><a href="{{ page.imgpath | prepend: site.baseurl }}{{ item.image_name }}" download><i class="fa fa-download"></i>Скачать фото</a> - {{ item.image_name }}</p>
     </article>
 {% endfor %}
+</section>

@@ -1,6 +1,6 @@
 title: VIZIT.MD
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+baseurl: "/vizit" # the subpath of your site, e.g. /blog/
+url: "http://mbit.ws" # the base hostname & protocol for your site
 description: > #
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -9,7 +9,6 @@ description: > #
 # Banner
 banner: "/images/fulls/banner.jpg"
 bannerlink: "http://mbit.ws"
-
 
 # Build settings
 permalink: /:categories/:title/

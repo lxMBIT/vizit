@@ -6,12 +6,13 @@ jQuery(function() {
     this.field('title', {
       boost: 10
     });
-    this.field('city');
     this.field('description');
+    this.field('city');
+    this.field('headimg');
   });
 
   // Download the data from the JSON file we generated
-  window.data = $.getJSON('../search_data.json');
+  window.data = $.getJSON('http://localhost:3000/search_data.json');
 
   // Wait for the data to load and add it to lunr
   window.data.then(function(loaded_data) {

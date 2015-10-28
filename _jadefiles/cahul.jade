@@ -1,9 +1,10 @@
-{% assign city = (site.posts | where: "city" , "cahul") %}
-{% for post in city %}
-article
-  a(class='thumbnail', href='{{ post.headimg  | prepend: site.baseurl }}', data-position='center')
-    img(src='{{ post.headimg  | prepend: site.baseurl }}', alt='')
-  h2
-    a(href='{{ site.baseurl }}{{ post.url }}') Смотреть отчет - {{ post.title }}
-  p {{ post.description }}
-{% endfor %}
+section#thumbnails
+  {% assign city = (site.posts | where: "city" , "cahul") %}
+  {% for post in city %}
+  article
+    a(class='thumbnail', href='{{ post.headimg  | prepend: site.baseurl }}', data-position='center')
+      img(src='{{ post.headimg  | prepend: site.baseurl }}', alt='')
+      h2
+      a(href='{{ site.baseurl }}{{ post.url }}') Смотреть отчет - {{ post.title }}
+      p {{ post.description }}
+  {% endfor %}
