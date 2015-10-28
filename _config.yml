@@ -7,7 +7,7 @@ description: > #
   Google search results) and in your feed.xml site description.
 
 # Banner
-banner: "images/fulls/banner.jpg"
+banner: "/images/fulls/banner.jpg"
 bannerlink: "http://localhost:3000"
 
 
