@@ -1,5 +1,5 @@
 title: VIZIT.MD
-baseurl: "/vizit" # the subpath of your site, e.g. /blog/
+baseurl: "/vizit" # the subpath of your site, e.g. /blog
 url: "http://mbit.ws" # the base hostname & protocol for your site
 description: > #
   Write an awesome description for your new site here. You can edit this
@@ -9,6 +9,9 @@ description: > #
 # Banner
 banner: "/images/fulls/banner.jpg"
 bannerlink: "http://mbit.ws"
+
+#CloudBucketlink
+gclnk: "https://storage.googleapis.com/mbit.ws"
 
 # Build settings
 permalink: /:categories/:title/
