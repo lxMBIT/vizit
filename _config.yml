@@ -11,7 +11,7 @@ banner: "/images/fulls/banner.jpg"
 bannerlink: "lxmbit.github.io"
 
 #CloudBucketlink
-gclnk: "https://storage.googleapis.com/mbit.ws"
+gclnk: "https://lxmbit.github.io/vizit"
 
 # Build settings
 permalink: /:categories/:title/
